@@ -1,0 +1,46 @@
+{
+    "name": "video-status-checker",
+    "version": "1.0.0",
+    "description": "Video status checker for rr database.",
+    "main": "videoStatusChecker.js",
+    "scripts": {
+        "start": "nodemon videoStatusChecker.js",
+        "lint": "npx eslint *.js --fix"
+    },
+    "author": "Tim Dunphy",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^7.1.0",
+        "eslint-config-standard": "^14.1.1",
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-standard": "^4.0.1",
+        "node-fetch": "^2.6.0",
+        "sqlite": "^4.0.8",
+        "sqlite3": "^4.2.0"
+    },
+    "eslintConfig": {
+        "env": {
+            "commonjs": true,
+            "es6": true,
+            "node": true
+        },
+        "extends": [
+            "standard"
+        ],
+        "globals": {
+            "Atomics": "readonly",
+            "SharedArrayBuffer": "readonly"
+        },
+        "parserOptions": {
+            "ecmaVersion": 11
+        },
+        "rules": {
+            "indent": [
+                "error",
+                4
+            ]
+        }
+    }
+}
